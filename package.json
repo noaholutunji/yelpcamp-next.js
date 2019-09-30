@@ -72,9 +72,7 @@
     "dev": "next",
     "start": "next start",
     "build": "next build",
-    "test": "node scripts/test.js",
-    "heroku-postbuild": "npm run build"
-    
+    "test": "node scripts/test.js"
   },
   "eslintConfig": {
     "extends": "react-app"
