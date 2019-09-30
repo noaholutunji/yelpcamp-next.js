@@ -70,7 +70,7 @@
   },
   "scripts": {
     "dev": "next",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "build": "next build",
     "test": "node scripts/test.js",
     "heroku-postbuild": "npm run build"
