@@ -30,22 +30,12 @@ const NewCampground = () => {
         },
       })
       .then(response => {
-        // setRedirect(true);
         Router.push('/campgrounds');
-        console.log(response.data);
       })
       .catch(error => {
         console.log(error.response);
       });
   };
-
-  // if (redirect) {
-  //   return <Redirect to={'/campgrounds'} />;
-  // }
-
-  // if (!localStorage.getItem('token')) {
-  //   return <Redirect to={'/campgrounds'} />;
-  // }
 
   return (
     <div className="container">
