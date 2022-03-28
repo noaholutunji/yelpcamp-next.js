@@ -30,7 +30,6 @@ const Campgrounds = props => {
   const logout = () => {
     localStorage.setItem('token', '');
     localStorage.clear();
-    // setRedirect(true);
     Router.push('/');
   };
 

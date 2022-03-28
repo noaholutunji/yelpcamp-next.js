@@ -6,7 +6,6 @@ import axios from '../../axios-order';
 const Register = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  // const [redirect, setRedirect] = useState(false);
 
   const handleUsernameChange = event => setUsername(event.target.value);
   const handlePasswordChange = event => setPassword(event.target.value);
@@ -22,7 +21,6 @@ const Register = () => {
       .then(response => {
         if (response.data) {
           localStorage.setItem('token', response.data.token);
-          // setRedirect(true);
           Router.push('/login');
         } else {
           console.log('Register Error');
@@ -32,14 +30,6 @@ const Register = () => {
         console.log(error.response);
       });
   };
-
-  // if (redirect) {
-  //   return <Redirect to={'/campgrounds'} />;
-  // }
-
-  // if (localStorage.getItem('token')) {
-  //   return <Redirect to={'/campgrounds'} />;
-  // }
 
   return (
     <div className="container">
